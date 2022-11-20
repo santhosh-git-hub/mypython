@@ -1,6 +1,6 @@
 FROM python
 WORKDIR /app
-ADD . /app
+ADD ../app.py /app
 RUN python -m pip install pypi Flask
 ENV NAME "World"
 CMD ["python","app.py"]
