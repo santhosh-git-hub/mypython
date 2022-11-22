@@ -1,5 +1,5 @@
 def CONTAINER_NAME="python-prj"
-def CONATAINER_TAG="latest"
+def CONTAINER_TAG="latest"
 def DOCKER_HUB_USER="santhosh-doc-hub"
 def HTTP_PORT="1010"
 
