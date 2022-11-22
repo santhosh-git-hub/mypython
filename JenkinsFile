@@ -9,7 +9,7 @@ node {
     }
 
     stage ('Image Prune') {
-        imagePrune(CONTAINER_NAME)
+       // imagePrune(CONTAINER_NAME)
     }
 
     stage ('Image Build') {
