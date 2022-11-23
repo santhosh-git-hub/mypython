@@ -1,6 +1,6 @@
 def CONTAINER_NAME="python-prj"
 def CONTAINER_TAG="latest"
-def DOCKER_HUB_USER="santhosh-doc-hub"
+def DOCKER_HUB_USER="santhoshdoc"
 def HTTP_PORT="1010"
 
 node {
