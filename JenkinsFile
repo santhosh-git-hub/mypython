@@ -2,6 +2,7 @@ def CONTAINER_NAME="python-prj"
 def CONTAINER_TAG="latest"
 def DOCKER_HUB_USER="santhoshdoc"
 def HTTP_PORT="1010"
+def DOCKER_PORT="4000"
 
 node {
     stage ('Checkout') {
@@ -49,6 +50,6 @@ def pushToImage(containerName,tag,dockerUser,dockerPassword){
 
 def runApp(containerName, tag, dockerHubUser, httpPort){
     sh "docker pull $dockerHubUser/$containerName"
-    sh "docker run -d --rm -p $httpPort:$httpPort --name $containerName $dockerHubUser/$containerName:$tag"
+    sh "docker run -d --rm -p $httpPort:$DOCKER_PORT --name $containerName $dockerHubUser/$containerName:$tag"
     echo "Application started on port ${httpPort} (http)"
 }
